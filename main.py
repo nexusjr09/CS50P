@@ -3,3 +3,4 @@
 #david malan 
 #edx
 #starting with variables : 
+#and functions 

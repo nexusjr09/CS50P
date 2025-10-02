@@ -4,3 +4,4 @@
 #edx
 #starting with variables : 
 #and functions 
+#lets go  get consistent ! 

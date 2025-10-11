@@ -1,4 +1,4 @@
-def hello():
-    print("Bigyan dai hero Ho  : ")
-print("Bigyan dai K ho ? ")
-hello()
+def hello (x):
+    print("hello , " , x)
+name = input("Enter your name : ")
+hello(name)

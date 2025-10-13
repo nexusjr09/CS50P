@@ -5,6 +5,9 @@ name = input("Enter your name : ")
 hello(name)
 
 
-def main(a):
+def main (a):
     name =     print("Enter your name : ")
-main()
+
+def main():
+    caste = input("what is your caste : ") #once the variable is assigned inside a particular function that same variable cannot be use inside another Function
+

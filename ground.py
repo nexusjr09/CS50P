@@ -1,7 +1,7 @@
-data = { "Nepal":"Kathmandu",   #FORMAT
-        "India":"New delhi",    #{"key":"value"}
-        "Pakistan":"Lahore",
-        "Bhutan":"Thimpu"}
-for i in data:
-    print(i)
-    
+datas = [
+     {"Name":"Bigyan","House":"Fikkal","Skin":"White"},
+     {"Name":"Suresh","House":"Palpa","Skin":"Black"},
+     {"Name":"Dipesh","House":"Jhapa","Skin":"Brown" },
+] 
+for data in datas:
+    print(data["Name"],data["House"],data["Skin"])

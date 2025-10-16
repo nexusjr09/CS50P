@@ -1,7 +1,11 @@
-n = int(input("Enter N : "))
-while n > 0 :
-    break
+def main():
+     n = int(input("Enter the n "))
+     python(n)
 
 
-for i in range(n):
-    print("Python 3 ")
+
+
+def python(n):
+    for _ in range(n):
+        print("python is a beast ")
+main()

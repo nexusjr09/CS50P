@@ -1,5 +1,7 @@
-number = int(input("enter how many times you wanna do meow : "))
-while number >=1:
-    print("meow")
-    number = number -1 
-    
+n = int(input("Enter N : "))
+while n > 0 :
+    break
+
+
+for i in range(n):
+    print("Python 3 ")

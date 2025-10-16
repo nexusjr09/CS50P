@@ -1,11 +1,7 @@
-def main():
-     n = int(input("Enter the n "))
-     python(n)
-
-
-
-
-def python(n):
-    for _ in range(n):
-        print("python is a beast ")
-main()
+data = { "Nepal":"Kathmandu",   #FORMAT
+        "India":"New delhi",    #{"key":"value"}
+        "Pakistan":"Lahore",
+        "Bhutan":"Thimpu"}
+for i in data:
+    print(i)
+    

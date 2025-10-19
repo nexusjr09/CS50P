@@ -1,11 +1,12 @@
-amount = 0 
-coins = [5 , 10 , 25]
+amount = 0
+coins = [5, 10, 25]
+
 while amount < 50:
-    print(f"Amount Due : {50-amount}")
-    coin = int(input("Enter coin: "))
+    print(f"Amount Due: {50 - amount}")
+    coin = int(input("Insert Coin: "))
     if coin in coins:
-        amount = amount + coin
+        amount += coin
     else:
-        print("Enter coin in this denominations : 5 or 10 or 25 ")
+        print("Enter coin in this denominations: 5, 10, or 25")
 else:
-    print(f"Change Owed: {amount - 50} ")
+    print(f"Change Owed: {amount - 50}")

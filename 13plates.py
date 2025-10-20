@@ -11,9 +11,23 @@ def main():
     else:
         print("Invalid")
 
-
 def is_valid(s):
-   start_two = s[:2] 
-   if len(s)>= 2 and len(s)<=6 and start_two.isalpha() and s.isalnum():    #isalnum()forspecialcharacter
-       return s
+    if len(s) >= 2 and len(s) <= 6:
+        if s.isalpha():
+            return True
+        elif s.isalnum() and s[0:2].isalpha():
+            num_started = False
+            for i, char in enumerate(s):
+                if char.isdigit():
+                    if not num_started:
+                        num_started = True
+                        if char == '0':
+                            return False
+                    else:
+                        continue
+                elif num_started:
+                    return False
+            return True
+    return False
+
 main()

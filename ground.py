@@ -1,8 +1,6 @@
-while True:
-    try:
-        x = int(input("Enter the Value : "))
-    except ValueError:
-        print("It is not an Integer")
-    else:
-        break
-print(f"x is {x}")
+i = 10
+while i>5:
+    print("Bigyan Hero")
+    i = i-1
+else:
+    print("done")

@@ -1,6 +1,6 @@
-i = 10
-while i>5:
-    print("Bigyan Hero")
-    i = i-1
+try:
+    x = int(input("Enter the data ; "))
+except ValueError:
+    pass
 else:
-    print("done")
+    print(x)

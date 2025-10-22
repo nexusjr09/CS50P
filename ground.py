@@ -1,6 +1,8 @@
-try:
-    data = int(input("Enter a string : "))
-except ValueError:
-    print("It's not integer")
-else:
-    print(data)
+while True:
+    try:
+        x = int(input("Enter the Value : "))
+    except ValueError:
+        print("It is not an Integer")
+    else:
+        break
+print(f"x is {x}")

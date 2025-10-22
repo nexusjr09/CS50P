@@ -1,5 +1,6 @@
 try:
-   data = int(input("User's Input "))
-   print(f"Data is {data}")
+    data = int(input("Enter a string : "))
 except ValueError:
-   print("Only integer allowed ! ")
+    print("It's not integer")
+else:
+    print(data)

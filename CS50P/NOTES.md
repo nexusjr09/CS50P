@@ -9,4 +9,5 @@
 
 ### LIBRARIES : 
 
-from random--->module import choice---> choice is a feature that this module contains 
+from random--->module import choice---> choice is a feature that this module contains .
+Format : module.feature()

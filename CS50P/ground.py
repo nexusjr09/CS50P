@@ -1,9 +1,3 @@
-num = 5
-output = []
-for i in range(num):
+import sys
 
-    data = input("Enter the names : ")
-    output.append(data)
-    
-print(output)
-    
+print("Hello bro named as : " , sys.argv[2])

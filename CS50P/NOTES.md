@@ -11,3 +11,6 @@
 
 from random--->module import choice---> choice is a feature that this module contains .
 Format : module.feature()
+
+arg.v = argument Value ! 
+import sys 

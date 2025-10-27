@@ -15,5 +15,3 @@ Format : module.feature()
 arg.v = argument Value ! 
 import sys 
 exit function = sys.exit("Too few arguments " )
-
-### LIB 

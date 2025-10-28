@@ -4,5 +4,4 @@ import sys
 if len(sys.argv) == 2 :
     cowsay.trex("hello" + sys.argv[1])
 else:
-    print("Gadha ho  ? ")
-
+    sys.exit()

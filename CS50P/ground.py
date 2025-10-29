@@ -1,1 +1,0 @@
-print('voice isolation and all ! ')

@@ -1,0 +1,2 @@
+from testone import main
+

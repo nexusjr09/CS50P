@@ -1,9 +1,6 @@
 import cowsay
 import sys
+import requests
 
-if len(sys.argv) == 2 :
-    cowsay.trex("hello" + sys.argv[1])
-else:
-    sys.exit()
-
-#dat 1
+data = requests.get("https://github/" + sys.argv[1])
+print(data.json)

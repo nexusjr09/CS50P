@@ -1,7 +1,6 @@
-import random
+dict = {
+    "bigyan":"Students",
+    "harry":"Instructot",}
 
-names = ["Bigyan","Aditi","Akash","Wanchhu"]
-random.seed(1) #makes it consistent 
-print(random.choices(names, k=2))
-
-#remaining
+user = input("Enter the name : ")
+print(dict[user])

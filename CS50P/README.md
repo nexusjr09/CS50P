@@ -14,6 +14,3 @@ Exercises Includes Practice of :
 - Libraries  
 - Object-Oriented Programming  
 - Unit Testing  
-
-## 📁 Structure
-Each file is listed in organized way starting form 1 till ending point !!

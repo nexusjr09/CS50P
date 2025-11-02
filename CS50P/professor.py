@@ -33,7 +33,7 @@ def main():
 def get_level():
     while True:
         try:
-            level = int(input("Enter Level (1, 2, or 3): "))
+            level = int(input("Level: "))
             if level in [1, 2, 3]:
                 return level
         except ValueError:

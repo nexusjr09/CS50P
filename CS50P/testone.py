@@ -1,9 +1,9 @@
 def main():
-    extra()
-    
-def extra():
-    print("Hello from extra secondary function ! ")
+    x = int(input("Enter the Number: "))
+    print("Answer is: " , calculation(x))
+
+def calculation(n):
+    return n + n 
 
 if __name__ == "__main__":
-    print("This will be only displayed on Main !")
-main()
+    main()

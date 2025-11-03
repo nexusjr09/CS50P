@@ -7,10 +7,3 @@ CS50P is a beginner-friendly course that covers core programming concepts using 
 Exercises Includes Practice of : 
 
 
-- Functions and Conditionals  
-- Loops  
-- File I/O  
-- Exceptions  
-- Libraries  
-- Object-Oriented Programming  
-- Unit Testing  

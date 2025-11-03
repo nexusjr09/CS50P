@@ -4,9 +4,9 @@ def main():
     checking()
 
 def checking():
-    try:
-        assert calculation(2) == 4
-    except AssertionError:
-        print("Negative ! Not correct !")
+   assert calculation(2) == 4
+   assert calculation(3) == 9
+   assert calculation(4) == 16
+
 if __name__ == "__main__":
     main()

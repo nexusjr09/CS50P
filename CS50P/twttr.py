@@ -1,20 +1,15 @@
-texts = input("Enter Strings : ").strip()
-toremove = ["a","e","i","o","u","A","E","I","O","U"]
-clean = ""
-for  i in range(len(texts)):
-    if texts[i]  in toremove:
-        texts.replace(texts[i],"")
-    else:
-        clean = clean + texts[i]
+def main():
+    data = input("Enter teh string: ").strip()
+    print(shorten(data))
 
-print(clean)
-
-###ANOTHER LOGICAL WAY:
-
-texts = input("Enter Strings : ").strip()
-toremove = ["a","e","i","o","u","A","E","I","O","U"]
-clean = ""
-for  i in range(len(texts)):
-    if texts[i] not in toremove:
-        clean = clean + texts[i]
-print(clean)    
+def shorten(word):
+    toremove = ["a","e","i","o","u","A","E","I","O","U"]
+    clean = ""
+    for i in range(len(word)):
+        if word[i] not in toremove:
+            clean = clean + word[i]
+            
+    return clean 
+        
+if __name__ == "__main__":
+    main()

@@ -17,4 +17,4 @@ clean = ""
 for  i in range(len(texts)):
     if texts[i] not in toremove:
         clean = clean + texts[i]
-print(clean)
+print(clean)    

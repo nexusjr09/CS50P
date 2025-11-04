@@ -1,16 +1,15 @@
 from testone import calculation
 
 def main():
-    checking()
+    test_checking()
 
-def checking():
-   try:
+def test_checking():
+   
       assert calculation(2) == 4
       assert calculation(3) == 9
       assert calculation(4) == 16
-   except AssertionError:
-       print("Invalid logic")
-
 
 if __name__ == "__main__":
     main()
+
+#WHILE USING PYTEST FUNCTION NAME SHOULD ALWAYS START WITH: test_

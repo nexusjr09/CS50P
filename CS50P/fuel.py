@@ -1,29 +1,29 @@
 def main():
     while True:
-     try:
-        data = input("Fraction: ")
-        result = second(data)
-        if result <= 1:
-            print("E")
-        elif result >= 99:
-            print("F")
-        else:
-            print(f"{result}%")
-        break
-     except (ValueError,ZeroDivisionError):
-        pass
-def second(s):
-    x_str,y_str= s.split("/")
+        try:
+            data = input("Fraction: ")
+            result = convert(data)
+            gauge(result)
+            break
+        except (ValueError, ZeroDivisionError):
+            continue
+
+def convert(fraction):
+    x_str, y_str = fraction.split("/")
     x = int(x_str)
     y = int(y_str)
-    if x > y:
-       raise ValueError
-    elif x < 0:
-       raise ValueError
-    elif y == 0:
-       raise ZeroDivisionError
-    else:
-       calc = round(float((x / y)* 100))
-    return calc
+    if x > y or x < 0 or y <= 0:
+        raise ValueError
+    return round((x / y) * 100)
 
-main()
+def gauge(percentage):
+    if percentage <= 1:
+        print("E")
+    elif percentage >= 99:
+        print("F")
+    else:
+        print(f"{percentage}%")
+
+if __name__ == "__main__":
+    main()
+

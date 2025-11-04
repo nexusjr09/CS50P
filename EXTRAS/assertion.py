@@ -1,4 +1,4 @@
-from testone import calculation
+from CS50P.test_one import calculation
 
 def main():
     checking()

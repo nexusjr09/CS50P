@@ -1,10 +1,5 @@
-#start with 2 letters
-#minimum 2 words maximum 6 (could be all letters + numbers at the end 
-#numbers should only be at last 
-#first number cannot be zero 
-#no special characters 
-
 def main():
+    """Prompts the user for a plate and determines if it is valid."""
     plate = input("Plate: ")
     if is_valid(plate):
         print("Valid")
@@ -12,23 +7,35 @@ def main():
         print("Invalid")
 
 def is_valid(s):
-    if len(s) >= 2 and len(s) <= 6:
-        if s.isalpha():
-            return True
-        elif s.isalnum() and s[0:2].isalpha():
-            num_started = False
-            for i, char in enumerate(s):
-                if char.isdigit():
-                    if not num_started:
-                        num_started = True
-                        if char == '0':
-                            return False
-                    else:
-                        continue
-                elif num_started:
-                    return False
-            return True
-    return False
+
+
+    if not (2 <= len(s) <= 6):
+        return False
+
+    if not s.isalnum():
+        return False
+
+    if not s[:2].isalpha():
+        return False
+
+    first_digit_index = -1
+
+    for i in range(len(s)):
+        if s[i].isdigit():
+            first_digit_index = i
+            break
+
+    if first_digit_index == -1:
+        return True
+
+    if s[first_digit_index] == '0':
+        return False
+
+    for i in range(first_digit_index, len(s)):
+        if not s[i].isdigit():
+            return False
+
+    return True
 
 if __name__ == "__main__":
     main()

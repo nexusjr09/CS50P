@@ -3,7 +3,7 @@ def main():
     print("Answer is: " , calculation(x))
 
 def calculation(n):
-    return n + n 
+    return n * n 
 
 if __name__ == "__main__":
     main()

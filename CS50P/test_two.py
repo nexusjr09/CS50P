@@ -1,11 +1,11 @@
-from testone import calculation
+from test_one import calculation
 
 def main():
     test_checking()
 
 def test_checking():
    
-      assert calculation(2) == 4
+      assert calculation(2) == 3 + 1
       assert calculation(3) == 9
       assert calculation(4) == 16
 

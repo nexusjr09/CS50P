@@ -3,5 +3,6 @@ for _ in range(3):
     
     file = open("fileIO.txt","a") #a = append
     file.write(data)
+    print()
 
 file.close()

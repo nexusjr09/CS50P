@@ -1,5 +1,8 @@
-with open("fileIO.txt","r") as file:
-    data = file.readlines()
-    
-for line in data:
-    print("heloo", line.rstrip())
+data = []
+
+with open("fileIO.txt") as file:
+    for line in file:
+        data.append(line.rstrip())
+
+for dat in sorted(data):
+    print(f"Hello, {dat}")

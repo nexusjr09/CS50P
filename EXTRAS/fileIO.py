@@ -1,3 +1,5 @@
 with open("fileIO.txt","r") as file:
     data = file.readlines()
-    print(data)
+    
+for line in data:
+    print("heloo", line)

@@ -1,6 +1,3 @@
-for _ in range(3):
-
-    data = input("Enter Your names: ")
-    
-    with open("fileIO.txt","a") as file:
-        file.write(f"{data}\n")
+with open("fileIO.txt","r") as file:
+    data = file.readlines()
+    print(data)

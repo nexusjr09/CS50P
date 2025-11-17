@@ -9,5 +9,5 @@ def get_name(student):
     return student["name"] 
 
 for student in sorted(students , key = get_name):
-    print(f"{name} is from {house}")      
+    print(f"{ student['name'] } is from {student['house']}")      
         

@@ -5,9 +5,6 @@ with open ("names.csv") as file:
         student = {"name": name , "house": house}
         students.append(student) 
 
-def get_name(student):
-    return student["house"] 
-
-for student in sorted(students , key = get_name):
+for student in sorted(students , key = lambda student: student["name"]):
     print(f"{ student['name'] } is from {student['house']}")      
         

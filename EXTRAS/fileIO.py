@@ -7,3 +7,7 @@ with open ("names.csv") as file:
 
 def get_name(student):
     return student["house"] 
+
+for student in sorted(students , key = get_name):
+    print(f"{ student['name'] } is from {student['house']}")      
+        

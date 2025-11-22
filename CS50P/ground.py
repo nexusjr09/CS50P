@@ -1,7 +1,8 @@
-def main():
-    data = input("Enter the Value: ")
-    second(data)
+from PIL import Image
 
-def second(s):
-    print(s)
+def main():
+    with Image.open("costume1.png") as file:
+        print(file.size)
+        print(file.format)
+
 main()

@@ -8,3 +8,6 @@ with open("names.csv") as file:
 
 for work in sorted(students, key=lambda data: data["address"]):
     print(f"{work['name']} is his name and {work['address']}")
+
+
+    

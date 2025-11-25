@@ -1,7 +1,7 @@
 import sys
 import os
 
-if sys.argv == 1 and sys.argv[-1:-2] == ".py":
+if len(sys.argv) == 2 and sys.argv[1].endswith(".py"):
     print('ready')
 else:
-    print("error")
+    print("error") 

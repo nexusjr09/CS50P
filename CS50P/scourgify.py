@@ -5,13 +5,11 @@ if len(sys.argv) > 3:
     sys.exit("Too many commandLine Arguments")
 if len(sys.argv) < 3:
     sys.exit("Too Few command-line arguments ")
-
-
-oldfile_name = sys.argv[1]
-newfile_name = sys.argv[2]
-if not oldfile_name.endswith(".csv") or not newfile_name.endswith(".csv"):
+oldfile = sys.argv[1]
+newfile = sys.argv[2]
+if not oldfile.endswith(".csv") or not newfile.endswith(".csv"):
     sys.exit("Invalid FileName")
-with open (oldfile_name) as file:
+with open (oldfile) as file:
     file_list = csv.reader(file)
     for line in file_list:
         name = line[0].strip("'")

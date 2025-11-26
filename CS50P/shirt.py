@@ -1,4 +1,5 @@
-import sys
+import sys,os
+from PIL import Image,ImageOps
 
 if len(sys.argv) > 3:
     sys.exit("Too many command-line arguments ")
@@ -19,3 +20,9 @@ out_ext = finalfile.split(".")[-1]
 if in_ext!=out_ext:
     sys.exit("Both the input and output file  must have same extension !")
 
+shirt = Image.open("shirt.png")
+photo = Image.open(rawfile)
+
+photo = ImageOps.fit(photo, shirt.size)
+photo.paste(shirt, (0, 0), shirt)
+photo.save(finalfile)

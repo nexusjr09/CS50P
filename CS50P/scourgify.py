@@ -12,9 +12,16 @@ if not oldfile.endswith(".csv") or not newfile.endswith(".csv"):
 
 before = sys.argv[1]
 after = sys.argv[2]
-with open(before,"r") as file:
-    dict_format = csv.DictReader(file)
-    for student in dict_format:
-        last,first = student["name"].split(", ")
-        house = student["house"]
-        
+try:
+    with open(before,"r") as infile, open(after,"w", newline="") as outfile:
+        reader = csv.DictReader(infile)
+        writer = csv.writer(outfile)
+        writer.writerow(["first","last","house"])
+        for student in reader:
+            last,first = student["name"].split(", ")
+            house = student["house"]
+            writer.writerow([first, last, house])
+except FileNotFoundError:
+    sys.exit("File Doesn't exist")
+
+

@@ -8,7 +8,7 @@ if len(sys.argv) < 3:
 rawfile = sys.argv[1].lower()
 finalfile = sys.argv[2].lower()
 
-valid_ext = (".jpeg",".png",".jpg")
+valid_ext=(".jpeg",".png",".jpg")
 
 if not rawfile.endswith(valid_ext):
     sys.exit("Incorrect file format of Input file")

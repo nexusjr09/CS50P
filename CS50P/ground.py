@@ -1,7 +1,8 @@
-email = input("Enter the email Address : ")
+import re
 
-username , domain = email.split("@")
-if username:
-    print("there is ")
+email = input("enter the email address: ")
+
+if re.search("@",email):
+    print("valid ")
 else:
-    print("no there isn't")
+    print("Invalid")

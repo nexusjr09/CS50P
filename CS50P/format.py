@@ -1,7 +1,8 @@
+import re 
+
 name = input("Enter your full name: ").strip()
-if "," in name:
-    last,first = name.split(", ")
+matches = re.search(r"^(.+), (.+)$",name)
+if matches:
+    last,first = matches.groups()
     name = f"{first} {last}"
-    print(f"Hello {name}")
-else:
-    print(f"Hello {name}")
+print(f"Hello {name}")

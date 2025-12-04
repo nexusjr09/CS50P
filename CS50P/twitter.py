@@ -1,3 +1,3 @@
-url = input("Enter your twitter profile Link: ")
-actual = url.replace("https://twitter.com/","")
-print(actual)
+url = input("Enter your twitter profile Link: ").lower().strip()
+actual = url.removeprefix("https://twitter.com/","")
+print(f"Username: {actual}")

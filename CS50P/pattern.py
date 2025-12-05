@@ -2,7 +2,7 @@ import re
 
 user_input = input("Enter the hash Code: ")
 
-pattern = r"#[]{6}"
+pattern = r"^#[a-f0-9A-F]{6}$"
 result = re.search(pattern,user_input)
 if result:
     print(f"It is Valid and its result is: {result.group()}")

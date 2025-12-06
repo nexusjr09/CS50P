@@ -10,9 +10,9 @@ def main():
 def validate(ip):
     pattern = r"^\d{0,255}\.\d{0,255}\.\d{0,255}\.\d{0,255}$"
     if match :=re.search(pattern,ip):
-        return("Valid")
+        return("True")
     else:
-        return("Invalid")
+        return("False")
 
 
 

@@ -8,13 +8,18 @@ def main():
 
 
 def validate(ip):
-    pattern = r"^\d{0,255}\.\d{0,255}\.\d{0,255}\.\d{0,255}$"
-    if match :=re.search(pattern,ip):
-        return("True")
-    else:
-        return("False")
+    parts = ip.split(".")
+    #REGEX  PATTERN WILL  BE TOO COMPLEX SO WE USED THIS NORMAL METHOD WHICH WAS ALLOWED
+    if len(parts) != 4:
+        return False
 
+    for p in parts:
+        if not p.isdigit():
+            return False
+        if not 0 <= int(p) <= 255:
+            return False
 
+    return True
 
 if __name__ == "__main__":
     main()

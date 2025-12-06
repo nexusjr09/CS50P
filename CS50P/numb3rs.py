@@ -16,7 +16,7 @@ def validate(ip):
     for p in parts:
         if not p.isdigit():
             return False
-        if not 0 <= int(p) <= 255:
+        if not 0 < int(p) <= 255:
             return False
 
     return True

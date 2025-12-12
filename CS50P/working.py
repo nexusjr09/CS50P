@@ -7,7 +7,7 @@ def main():
 
 
 def convert(s):
-    pattern = r"(/d*)(:/d/d)? (/w/w) to (/d*)(:/d/d)? (/w/w)"
+    pattern = r"(\d*)(:\d\d)? (\w\w) to (\d*)(:\d\d)? (\w\w)"
     if match:= re.search(pattern,s):
         start_hour = match.group(1)
         start_minute = match.group(2)

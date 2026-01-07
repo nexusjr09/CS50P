@@ -2,13 +2,13 @@
 
 def main():
     data = get_student()
-    print(f"{data[0]} is name and {data[1]} is house")
+    print(f"{data['name']} is name and {data['house']} is house")
 
 
 def get_student():
-    name = input("Enter the name: ")
-    house = input("Enter the house: ")
-    return (name,house)
-
+    student = {}
+    student["name"] = input("Enter your name: ")
+    student["house"] = input("Enter your house: ")
+    return student
 if __name__== "__main__":
     main()

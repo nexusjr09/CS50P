@@ -1,7 +1,11 @@
 #OBJECT ORIENTED PROGRAMMING
 
 class Student:
-    ...
+    def __init__(self,name,house):
+        self.name = name
+        self.house = house
+
+
 
 def main():
     student = get_student()
@@ -9,9 +13,9 @@ def main():
 
 
 def get_student():
-    data = Student
-    data.name = input("Enter the name: ")
-    data.house = input("Enter your house: ")
+    name = input("Enter your name: ")
+    house = input("Enter your house : ")
+    data = Student(name,house)
     return data 
 if __name__== "__main__":
     main()

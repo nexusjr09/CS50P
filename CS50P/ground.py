@@ -1,5 +1,8 @@
 #OBJECT ORIENTED PROGRAMMING
 
+class Student:
+    ...
+
 def main():
     data = get_student()
     print(f"{data['name']} is name and {data['house']} is house")

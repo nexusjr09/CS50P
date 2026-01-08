@@ -4,14 +4,15 @@ class Student:
     ...
 
 def main():
-    data = get_student()
-    print(f"{data['name']} is name and {data['house']} is house")
+    student = get_student()
+    print(f"{student.name} is name and {student.house} is house")
 
 
 def get_student():
-    student = {}
-    student["name"] = input("Enter your name: ")
-    student["house"] = input("Enter your house: ")
-    return student
+    data = Student
+    data.name = input("Enter the name: ")
+    data.house = input("Enter your house: ")
+    return data 
 if __name__== "__main__":
     main()
+

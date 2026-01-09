@@ -8,12 +8,8 @@ class Student:
             raise ValueError("Invalid House")
         self.name = name
         self.house = house
-def __str__(self):
-    return f"{self.name} is from {self.house}"
-
-
-
-
+    def __str__(self):
+         return f"{self.name} is from {self.house}"
 
 def main():
     student = get_student()

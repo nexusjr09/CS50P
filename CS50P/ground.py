@@ -2,6 +2,8 @@
 
 class Student:
     def __init__(self,name,house):
+        if not name:
+            return ValueError("Missing Name")
         self.name = name
         self.house = house
 

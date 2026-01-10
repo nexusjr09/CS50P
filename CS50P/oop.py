@@ -8,29 +8,14 @@ class Student:
             raise ValueError("Invalid House")
         self.name = name
         self.house = house
-        self.patronus = patronus
-
-    def __str__(self):
-         return f"{self.name} is from {self.house}"
-    def charm(self):
-        match self.patronus:
-            case "Stag":
-                return "🏹"
-            case "Otter":
-                return "🔴"
-            case _:
-                return "💉"
-
 
 def main():
     student = get_student()
-    print("Patronus: ")
-    print(student.charm())
+    print(student)
 def get_student():
     name = input("Enter your name: ")
     house = input("Enter your house : ")
-    patronus = input("Enter your patronus: ")
-    data = Student(name,house,patronus)
+    data = Student(name,house)
     return data 
 if __name__== "__main__":
     main()

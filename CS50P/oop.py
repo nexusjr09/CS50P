@@ -12,6 +12,7 @@ class Student:
         return f"{self.name} is from {self.house}"
 def main():
     student = get_student()
+    student.house = "Ilam, Suryodaya Na Pa "
     print(student)
 def get_student():
     name = input("Enter your name: ")

@@ -10,6 +10,8 @@ class Student:
         self.house = house
     def __str__(self):
         return f"{self.name} is from {self.house}"
+    def house(self):
+        return self.house
 def main():
     student = get_student()
     student.house = "Ilam, Suryodaya Na Pa "
@@ -21,3 +23,4 @@ def get_student():
     return data 
 if __name__== "__main__":
     main()
+ 

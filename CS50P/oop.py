@@ -10,6 +10,8 @@ class Student:
         return f"{self.name} is from {self.house}"
     def house(self):
         return self.house
+    
+
 
 def main():
     student = get_student()

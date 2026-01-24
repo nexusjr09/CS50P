@@ -10,6 +10,10 @@ class Student:
         return f"{self.name} is from {self.house}"
     def house(self):
         return self.house
+    def house(self,house):
+        if house not in ["Gryffindor","HufflePuff","Ravenclaw"]:
+            raise ValueError("Invalid House")
+        self.house = house
     
 
 

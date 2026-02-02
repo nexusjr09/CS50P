@@ -1,5 +1,4 @@
-#OBJECT ORIENTED PROGRAMMING 
+def main():
+    print("Hello main function called !!")
 
-
-
-
+main()

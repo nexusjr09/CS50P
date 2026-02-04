@@ -1,4 +1,1 @@
-def main():
-    print("Hello main function called !!")
-
-main()
+#OOP IN PYTHON 

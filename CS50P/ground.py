@@ -1,1 +1,5 @@
-
+values = ("bigyan",18,True)
+words = ("Bigyan","Baral",18)
+print(words[0])
+print(words[1])
+print(words[2])

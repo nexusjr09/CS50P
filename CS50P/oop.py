@@ -1,9 +1,9 @@
 #OOP IN PYTHON
 
 def main():
-    name,house = get_student()
+    var1,var2 = get_student()
 
-    print(f"{name} is from {house}")
+    print(f"{var1} is from {var2}")
 
 def get_student():
     name = input("Enter your name: ")

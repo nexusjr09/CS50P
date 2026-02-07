@@ -1,13 +1,14 @@
 #OOP IN PYTHON
 
 def main():
-    var1,var2 = get_student()
-
-    print(f"{var1} is from {var2}")
+    student = get_student()
+    if student["name"] == "Abhishek":
+        student["house"] = "Jhapa"
+        print(f"{student["name"]} is from {student["house"]}")
 
 def get_student():
-    name = input("Enter your name: ")
-    house = input("Enter your house: ")
-    return name,house
+    name = input("Enter the name: ")
+    house = input("Enter the house: ")
+    return ({"name":name,"house":house})
 if __name__ == "__main__":
     main()

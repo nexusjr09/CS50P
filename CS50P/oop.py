@@ -1,5 +1,8 @@
 class Student:
-    ...
+    def __init__(self,house,name):
+        self.name = name
+        self.house = house
+
 
 def main():
     student = get_student()

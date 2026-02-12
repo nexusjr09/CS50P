@@ -6,16 +6,18 @@ class Student:
             raise ValueError("Invalid House Name !")
         self.name = name
         self.house = house
-
+    def __str__(self):
+        return f"{self.name} is from {self.house}"
 
 def main():
     student = get_student()
-    print(f"{student.name} is from {student.house}")
+    print(student)
 
 def get_student():
     name = input("Enter the name: ")
     house = input("Enter the house: ")
-    return Student(house,name)
+    zodiac = input("Enter your zodiac sign: ")
+    return Student(house,name,zodiac)
 if __name__ == "__main__":
     main()
 

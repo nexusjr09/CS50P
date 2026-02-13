@@ -8,7 +8,19 @@ class Student:
         self.house = house
     def __str__(self):
         return f"{self.name} is from {self.house}"
-
+ 
+ 
+    @property
+    def house(self):
+        return self.house
+    @house.setter
+    def house(self,house):
+        if house not in ["Kathmandu","Lalitpur","Bhaktapur","Chabel"]:
+            raise ValueError("Invalid house location ")
+        else:
+            self.house = house
+    
+    
 def main():
     student = get_student()
     print(student)

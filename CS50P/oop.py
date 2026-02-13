@@ -2,8 +2,7 @@ class Student:
     def __init__(self,house,name):
         if not name:#equals to if name ==""": 
             raise ValueError("Missing Name !")
-        if house not in ["Kathmandu","Lalitpur","Bhaktapur"]:
-            raise ValueError("Invalid House Name !")
+        
         self.name = name
         self.house = house
     def __str__(self):
@@ -12,13 +11,13 @@ class Student:
  
     @property
     def house(self):
-        return self.house
+        return self._house
     @house.setter
     def house(self,house):
         if house not in ["Kathmandu","Lalitpur","Bhaktapur","Chabel"]:
             raise ValueError("Invalid house location ")
         else:
-            self.house = house
+            self._house = house
     
     
 def main():

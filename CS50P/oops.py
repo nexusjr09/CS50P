@@ -1,12 +1,13 @@
 class Student:
-    name = "Bigyan"
-    def __init__(self):
+    
+    def __init__(self,name):
+        self.name = name  
         print("Dunder is here ")
 
-s1 = Student()
+s1 = Student("Bigyan")
 print(s1.name)
 
-s2 = Student()
+s2 = Student("Baral")
 print(s2.name)
 
 # class Car:

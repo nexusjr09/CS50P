@@ -1,17 +1,19 @@
-# class Student:
-#     name = "Bigyan"
+class Student:
+    name = "Bigyan"
+    def __init__(self):
+        print("Dunder is here ")
 
-# s1 = Student()
-# print(s1.name)
+s1 = Student()
+print(s1.name)
 
-# s2 = Student()
-# print(s2.name)
+s2 = Student()
+print(s2.name)
 
-class Car:
-    color = "Blue"
-    model = "BMW"
+# class Car:
+#     color = "Blue"
+#     model = "BMW"
 
 
-c1 = Car()
-print(c1.color)
-print(c1.model)
+# c1 = Car()
+# print(c1.color)
+# print(c1.model)

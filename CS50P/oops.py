@@ -1,20 +1,16 @@
 class Student:
-    
-    def __init__(self,name):
-        self.name = name  
-        print("Dunder is here ")
+    def __init__(self,firstname,lastname,age):
+        self.name = firstname
+        self.lname = lastname 
+        self.age = age 
+        print("All data created !")
 
-s1 = Student("Bigyan")
+s1 = Student("Bigyan","Baral","18")
 print(s1.name)
+print(s1.lname)
+print(s1.age)
 
-s2 = Student("Baral")
+s2 = Student("Amrit","Subba","19")
 print(s2.name)
-
-# class Car:
-#     color = "Blue"
-#     model = "BMW"
-
-
-# c1 = Car()
-# print(c1.color)
-# print(c1.model)
+print(s2.lname)
+print(s1.age)

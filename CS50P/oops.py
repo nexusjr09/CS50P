@@ -1,6 +1,5 @@
 class Student:
     college_name = "Everland Int"
-    firstname = "Bigyan ALL Over"
     #default constructors 
     def __init__(self):
         pass

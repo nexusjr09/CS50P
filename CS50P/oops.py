@@ -1,4 +1,6 @@
 class Student:
+    college_name = "Everland Int"
+    firstname = "Bigyan ALL Over"
     #default constructors 
     def __init__(self):
         pass
@@ -8,7 +10,7 @@ class Student:
         lastname = input("Enter the last name: ")
         age = input("Enter the age of s1:  ")
         
-        self.name = firstname
+        self.name = firstname #obj attri > class atri
         self.lname = lastname 
         self.age = age 
         print("All data created !")
@@ -23,3 +25,4 @@ print(s2.name)
 print(s2.lname)
 print(s2.age)
 
+ 

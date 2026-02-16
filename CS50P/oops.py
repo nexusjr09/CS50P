@@ -22,3 +22,4 @@ s2 = Student()
 print(s2.name)
 print(s2.lname)
 print(s2.age)
+

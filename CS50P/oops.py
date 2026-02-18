@@ -1,4 +1,7 @@
 class Car:
+    cc = "250"
+    color = "black"
+    engine = "high"
     @staticmethod 
     def start():
         print("Car started !")
@@ -13,4 +16,7 @@ class ToyotaCar(Car):
 
 car1 = ToyotaCar("Fortuner")
 car2 = ToyotaCar("Prius")
-print(car1.start())
+print(car1.stop())
+print(car1.color)
+print(car1.engine)
+print(car1.cc)

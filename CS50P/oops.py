@@ -9,3 +9,4 @@ class Account:
 d1 = Account("6767","abcdich")
 print(d1.acc_no)
 #print(d1.acc_pass) #cannot be accessed as it is outside the class 
+

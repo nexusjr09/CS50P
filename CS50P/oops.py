@@ -26,5 +26,4 @@ class Fortuner(ToyotaCar):
         self.type = type
 
 c3 =Fortuner("Blackish")
-print(c3.color)
-print(c3.cc)
+c3.start()

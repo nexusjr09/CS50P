@@ -20,3 +20,11 @@ print(car1.stop())
 print(car1.color)
 print(car1.engine)
 print(car1.cc)
+
+class Fortuner(ToyotaCar):
+    def __init__(self,type):
+        self.type = type
+
+c3 =Fortuner("Blackish")
+print(c3.color)
+print(c3.cc)

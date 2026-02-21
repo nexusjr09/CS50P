@@ -19,9 +19,15 @@
 # main()
 
 def meow(n: int)-> None:
-    return "Meow/n" * n
+    return "Meow\n" * n
 
-"""Meow function documnetaion. """
+"""Meow function documnetaion.
+   instead of int if others : None 
+   instead of int : Type ValueError 
+
+
+ """
+
 
 number: int = int(input("Enter the number of Times:" ))
-meow(number)
+print(meow(number))

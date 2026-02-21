@@ -18,4 +18,9 @@
 
 # main()
 
+def meow(n: int):
+    for _ in range(n):
+        print("Meows")
 
+number: int = int(input("Enter the number of Times:" ))
+meow(number)

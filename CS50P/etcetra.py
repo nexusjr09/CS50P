@@ -21,6 +21,7 @@
 def meow(n: int)-> None:
     return "Meow/n" * n
 
+"""Meow function documnetaion. """
 
 number: int = int(input("Enter the number of Times:" ))
 meow(number)

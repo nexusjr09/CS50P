@@ -19,8 +19,8 @@
 # main()
 
 def meow(n: int)-> None:
-    for _ in range(n):
-        print("Meows")
+    return "Meow/n" * n
+
 
 number: int = int(input("Enter the number of Times:" ))
 meow(number)

@@ -1,4 +1,5 @@
 #unpacking in python
 def total(galleons,sickles,knuts):
     return (galleons * 17 + sickles) * 29 + knuts
-print(total(100,50,25))
+coins = [100,50,25]
+print(total(coins[0],coins[1],coins[2]))

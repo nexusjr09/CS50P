@@ -7,3 +7,4 @@ students = [
 for student in (students):
     if student["home"] == "Lalitpur":
         print(student["name"])
+

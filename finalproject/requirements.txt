@@ -1,0 +1,5 @@
+*** REQUIRED LIBRARIES TO BUILD THIS TOOL ***
+
+1. requests
+2. rich
+3. pytest

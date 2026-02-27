@@ -1,5 +1,7 @@
 *** REQUIRED LIBRARIES TO BUILD THIS TOOL ***
 
-1. requests
-2. rich
-3. pytest
+requests       # API calls
+rich           # beautiful terminal UI
+plotext        # terminal charts
+textblob       # sentiment analysis
+pytest         # tests

@@ -1,7 +1,5 @@
-*** REQUIRED LIBRARIES TO BUILD THIS TOOL ***
-
-requests       # API calls
-rich           # beautiful terminal UI
-plotext        # terminal charts
-textblob       # sentiment analysis
-pytest         # tests
+requests
+matplotlib
+pandas           # optional, for easier data handling
+plyer            # for desktop notifications (or win10toast)
+pytest
